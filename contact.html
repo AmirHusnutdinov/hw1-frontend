@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - John's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav class="nav">
+        <div class="hamburger" id="hamburger">☰</div>
+        <div class="nav-links" id="nav-links">
+          <a href="works.html" class="nav-link">Works</a>
+          <a href="blog.html" class="nav-link">Blog</a>
+          <a href="contact.html" class="nav-link active">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  
+  <section class="contact-page">
+    <div class="container">
+      <h1 class="page-title">Contact Me</h1>
+      
+      <div class="contact-content">
+        <div class="contact-info">
+          <p>Feel free to reach out if you want to collaborate with me, or simply have a chat.</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <strong>Email:</strong>
+              <span>john@example.com</span>
+            </div>
+            <div class="contact-item">
+              <strong>Phone:</strong>
+              <span>+1 (123) 456-7890</span>
+            </div>
+            <div class="contact-item">
+              <strong>Location:</strong>
+              <span>New York, NY</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-form-container">
+          <h2>Send me a message</h2>
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="name">Name <span class="required">*</span></label>
+              <input type="text" id="name" name="name" required>
+              <span class="error-message">Please enter your name</span>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email <span class="required">*</span></label>
+              <input type="email" id="email" name="email" required>
+              <span class="error-message">Please enter a valid email address</span>
+            </div>
+            
+            <div class="form-group">
+              <label for="subject">Subject <span class="required">*</span></label>
+              <input type="text" id="subject" name="subject" required>
+              <span class="error-message">Please enter a subject</span>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Message <span class="required">*</span></label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+              <span class="error-message">Please enter your message</span>
+            </div>
+            
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <footer>
+    <div class="container">
+      <div class="social-links">
+        <a href="#" class="social-icon">FB</a>
+        <a href="#" class="social-icon">IG</a>
+        <a href="#" class="social-icon">TW</a>
+        <a href="#" class="social-icon">LI</a>
+      </div>
+      <p class="copyright">Copyright ©2020 All rights reserved</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
