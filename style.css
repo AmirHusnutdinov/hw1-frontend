@@ -186,6 +186,12 @@ header {
   color: #212529;
 }
 
+.post-meta, .blog  .blog-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #212529;
+}
+
 .post-meta, .blog-meta, .work-item-meta, .work-detail-meta {
   display: flex;
   gap: 15px;
@@ -396,6 +402,13 @@ header {
 
 .form-group input:invalid,
 .form-group textarea:invalid {
+  border-color: #dee2e6;
+}
+
+.form-group input:invalid:focus,
+.form-group textarea:invalid:focus,
+.form-group input:invalid:not(:placeholder-shown),
+.form-group textarea:invalid:not(:placeholder-shown) {
   border-color: #ff6b6b;
 }
 
@@ -413,6 +426,8 @@ header {
   margin-top: 5px;
 }
 
+.form-group input:invalid:focus ~ .error-message,
+.form-group textarea:invalid:focus ~ .error-message,
 .form-group input:invalid:not(:placeholder-shown) ~ .error-message,
 .form-group textarea:invalid:not(:placeholder-shown) ~ .error-message {
   display: block;
@@ -461,7 +476,7 @@ footer {
   .hamburger {
     display: none;
   }
-  
+
   .nav-links {
     display: flex;
     position: static;
@@ -471,76 +486,76 @@ footer {
     padding: 0;
     gap: 30px;
   }
-  
+
   .nav-link {
     display: inline;
     padding: 0;
     font-size: 16px;
   }
-  
+
   .hero {
     padding: 50px 0;
   }
-  
+
   .hero .container {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
-  
+
   .profile-img {
     order: 2;
     margin-bottom: 0;
     width: 200px;
     height: 200px;
   }
-  
+
   .hero-content {
     order: 1;
     width: 60%;
     text-align: left;
   }
-  
+
   .hero-content h1 {
     font-size: 32px;
   }
-  
+
   .hero-content h2 {
     font-size: 22px;
   }
-  
+
   .posts-grid {
     flex-direction: row;
     gap: 30px;
   }
-  
+
   .post-card {
     width: 50%;
   }
-  
+
   .work-card, .work-item {
     flex-direction: row;
     gap: 30px;
   }
-  
+
   .work-img, .work-item-img {
     width: 30%;
     height: 150px;
   }
-  
+
   .work-content, .work-item-content {
     width: 70%;
   }
-  
+
   .contact-content {
     flex-direction: row;
     gap: 60px;
   }
-  
+
   .contact-info {
     width: 40%;
   }
-  
+
   .contact-form-container {
     width: 60%;
   }
